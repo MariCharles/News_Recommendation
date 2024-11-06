@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cw_2601.SignInController"
+      alignment="CENTER" spacing="10" padding="20">
+    <Label text="Sign In" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+    <TextField fx:id="usernameField" promptText="Username" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+    <Label fx:id="errorLabel" textFill="red" />
+    <Button fx:id="signInButton" text="Sign In" onAction="#handleSignInButton" />
+    <Button fx:id="signUpButton" text="Sign Up" onAction="#handleSignUpButton" />
+</VBox>
