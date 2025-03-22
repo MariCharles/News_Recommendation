@@ -1,0 +1,1 @@
+A personalized news recommendation system with features to view, like, skip articles, and receive recommendations based on user interactions. Implemented using Librec for recommendations, with user and admin validation, and data stored in a MySQL database using MySQL Workbench.
