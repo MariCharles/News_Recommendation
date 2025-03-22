@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cw_2601.ArticleViewController" style="-fx-background-color: white;" prefWidth="600" prefHeight="400">
+    <center>
+        <VBox spacing="20" style="-fx-padding: 20px;">
+            <Text fx:id="articleTitle" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: gold;" wrappingWidth="550" />
+
+            <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                <Text fx:id="articleContent" style="-fx-font-size: 16px; -fx-text-fill: black;" wrappingWidth="550" />
+            </ScrollPane>
+
+            <HBox spacing="10" style="-fx-alignment: center;">
+                <Button text="Like" onAction="#handleLike" style="-fx-background-color: gold; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 5px 15px;" />
+                <Button text="Mark as Read" onAction="#markAsRead" style="-fx-background-color: gold; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 5px 15px;" />
+                <Button text="Skip" onAction="#skipArticle" style="-fx-background-color: gold; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 5px 15px;" />
+            </HBox>
+        </VBox>
+    </center>
+
+    <bottom>
+        <AnchorPane>
+            <HBox spacing="10" style="-fx-alignment: center;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                <Button text="Previous" onAction="#showPreviousArticle" style="-fx-background-color: gold; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 5px 15px;" />
+                <Button text="Next" onAction="#showNextArticle" style="-fx-background-color: gold; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 5px 15px;" />
+            </HBox>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cw_2601.SkippedArticlesController" spacing="20" alignment="CENTER" style="-fx-background-color: white; -fx-padding: 20px;">
+    <Text text="Skipped Articles" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: red;" />
+
+    <ListView fx:id="skippedArticlesListView" style="-fx-pref-width: 400px; -fx-pref-height: 300px;" />
+
+    <Button text="Close" onAction="#handleClose"
+            style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 14px; -fx-padding: 10px 20px; -fx-border-radius: 10px;" />
+</VBox>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.cw_2601.SignUpController"
+          alignment="CENTER" hgap="10" vgap="15" style="-fx-background-color: white; -fx-padding: 40px;">
+    <Label text="Sign Up" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: gold;"
+           GridPane.columnSpan="2" GridPane.rowIndex="0" />
+
+    <Label text="Username:" style="-fx-font-size: 16px; -fx-text-fill: gold;" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+    <TextField fx:id="usernameField" promptText="Enter your username"
+               style="-fx-border-color: gold; -fx-font-size: 14px; -fx-padding: 8px;"
+               GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+    <Label text="Password:" style="-fx-font-size: 16px; -fx-text-fill: gold;" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+    <PasswordField fx:id="passwordField" promptText="Enter your password"
+                   style="-fx-border-color: gold; -fx-font-size: 14px; -fx-padding: 8px;"
+                   GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+    <Label text="Confirm Password:" style="-fx-font-size: 16px; -fx-text-fill: gold;" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+    <PasswordField fx:id="confirmPasswordField" promptText="Re-enter your password"
+                   style="-fx-border-color: gold; -fx-font-size: 14px; -fx-padding: 8px;"
+                   GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+    <Label text="Select your preferences:" style="-fx-font-size: 16px; -fx-text-fill: gold;" GridPane.rowIndex="4" GridPane.columnSpan="2" />
+
+    <CheckBox fx:id="technologyCheckBox" text="Technology" style="-fx-font-size: 14px;" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+    <CheckBox fx:id="healthCheckBox" text="Health" style="-fx-font-size: 14px;" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <CheckBox fx:id="sportsCheckBox" text="Sports" style="-fx-font-size: 14px;" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+    <CheckBox fx:id="entertainmentCheckBox" text="Entertainment" style="-fx-font-size: 14px;" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+    <CheckBox fx:id="businessCheckBox" text="Business" style="-fx-font-size: 14px;" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+    <CheckBox fx:id="politicsCheckBox" text="Politics" style="-fx-font-size: 14px;" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+    <CheckBox fx:id="weatherCheckBox" text="Weather" style="-fx-font-size: 14px;" GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+
+    <Label fx:id="errorLabel" textFill="red" style="-fx-font-size: 14px; -fx-font-style: italic;"
+           GridPane.rowIndex="9" GridPane.columnSpan="2" />
+
+    <Button fx:id="signUpButton" text="Sign Up" onAction="#handleSignUpButton"
+            style="-fx-background-color: gold; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 10px 20px; -fx-border-radius: 15px;"
+            GridPane.rowIndex="10" GridPane.columnSpan="2" />
+
+    <Button fx:id="signInLinkButton" text="Already have an account? Sign In"
+            onAction="#handleSignInLink"
+            style="-fx-background-color: transparent; -fx-text-fill: gold; -fx-font-size: 14px;"
+            GridPane.rowIndex="11" GridPane.columnSpan="2" />
+</GridPane>
